@@ -5,7 +5,7 @@ const nextConfig = {
   output: "standalone",
   // Hostinger checkouts sit under a domain folder that may have another
   // lockfile. Pin tracing to this app so `.next/standalone` stays correct.
-  outputFileTracingRoot: process.cwd(),
+  outputFileTracingRoot: __dirname,
 };
 
 module.exports = nextConfig;
