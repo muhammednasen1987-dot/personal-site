@@ -36,20 +36,6 @@ export default async function AboutPage({
               </a>
             </dd>
           </div>
-          <div>
-            <dt className="text-sm text-paper-dim">{a.githubLabel}</dt>
-            <dd>
-              <a
-                href={site.github}
-                className="text-brass underline-offset-4 hover:underline"
-                dir="ltr"
-                rel="noreferrer"
-                target="_blank"
-              >
-                {site.githubHandle}
-              </a>
-            </dd>
-          </div>
         </dl>
       </section>
     </article>

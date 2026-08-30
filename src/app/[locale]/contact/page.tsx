@@ -31,15 +31,6 @@ export default async function ContactPage({
           <div className="mt-5">
             <CopyEmail copyLabel={c.copy} copiedLabel={c.copied} />
           </div>
-          <a
-            href={site.github}
-            className="mt-6 inline-block text-paper-dim underline-offset-4 hover:text-brass hover:underline"
-            dir="ltr"
-            rel="noreferrer"
-            target="_blank"
-          >
-            {c.github} · {site.githubHandle}
-          </a>
         </div>
       </header>
       <section className="frame p-6 sm:p-8">
