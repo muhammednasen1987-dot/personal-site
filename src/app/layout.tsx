@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Amiri, IBM_Plex_Sans, IBM_Plex_Sans_Arabic, Instrument_Serif } from "next/font/google";
+import { site } from "@/lib/site";
 import "./globals.css";
 
 const body = IBM_Plex_Sans_Arabic({
@@ -32,13 +33,13 @@ const serif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: "محمد نعسان — حلول تقنية، أتمتة، وذكاء اصطناعي",
-    template: "%s · محمد نعسان",
+    default: `${site.nameAr} — حلول تقنية، أتمتة، وذكاء اصطناعي`,
+    template: `%s · ${site.nameAr}`,
   },
   description:
     "أعمل بشكل مستقل على بناء أنظمة عملية: بوابات واتساب، أتمتة سير العمل، ووكلاء ذكاء اصطناعي قابلة للنشر.",
   openGraph: {
-    title: "محمد نعسان — حلول تقنية، أتمتة، وذكاء اصطناعي",
+    title: `${site.nameAr} — حلول تقنية، أتمتة، وذكاء اصطناعي`,
     description:
       "أعمل بشكل مستقل على بناء أنظمة عملية: بوابات واتساب، أتمتة سير العمل، ووكلاء ذكاء اصطناعي قابلة للنشر.",
     locale: "ar",

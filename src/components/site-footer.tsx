@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Mark } from "@/components/mark";
 import { localePath, type Dictionary, type Locale } from "@/lib/i18n";
 import { navItems } from "@/lib/nav";
-import { site } from "@/lib/site";
+import { displayName, site } from "@/lib/site";
 
 export function SiteFooter({
   locale,
@@ -17,7 +17,7 @@ export function SiteFooter({
         <div className="max-w-sm">
           <div className="mb-3 flex items-center gap-3 text-brass">
             <Mark className="size-8" />
-            <strong className="text-paper">{copy.brand.name}</strong>
+            <strong className="text-paper">{displayName(locale)}</strong>
           </div>
           <p className="text-sm text-paper-dim">{copy.footer.note}</p>
         </div>
@@ -41,7 +41,7 @@ export function SiteFooter({
       </div>
       <div className="hairline h-px" />
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 text-xs text-paper-dim sm:px-6">
-        <span>{copy.footer.rights}</span>
+        <span>{displayName(locale)}</span>
         <Link href={localePath(locale, "/products")} className="hover:text-brass">
           {site.product}
         </Link>

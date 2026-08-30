@@ -6,3 +6,7 @@ export const site = {
   githubHandle: "muhammednasen1987-dot",
   product: "wa-platform",
 } as const;
+
+export function displayName(locale: "ar" | "en") {
+  return locale === "ar" ? site.nameAr : site.nameEn;
+}

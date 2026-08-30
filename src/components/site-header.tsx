@@ -8,6 +8,7 @@ import { LanguageToggle } from "@/components/language-toggle";
 import { Mark } from "@/components/mark";
 import { localePath, type Dictionary, type Locale } from "@/lib/i18n";
 import { navItems } from "@/lib/nav";
+import { displayName } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader({
@@ -32,7 +33,7 @@ export function SiteHeader({
           <Mark className="size-9 text-brass" />
           <span className="leading-tight">
             <span className="block text-[0.95rem] font-semibold">
-              {copy.brand.name}
+              {displayName(locale)}
             </span>
             <span className="block text-[0.68rem] text-paper-dim">
               {copy.brand.field}

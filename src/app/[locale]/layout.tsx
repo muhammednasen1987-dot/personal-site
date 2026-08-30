@@ -19,7 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!isLocale(raw)) return {};
   const copy = t(raw);
   return {
-    title: copy.meta.title,
+    title: {
+      absolute: copy.meta.title,
+    },
     description: copy.meta.description,
     alternates: {
       languages: {
