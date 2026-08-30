@@ -3,6 +3,7 @@ export const site = {
   nameEn: "Muhammed Nasen",
   email: "syria4future@gmail.com",
   product: "wa-platform",
+  origin: "https://muhammednasen.com",
 } as const;
 
 export function displayName(locale: "ar" | "en") {
