@@ -160,6 +160,7 @@ export const dictionary = {
       linksTitle: "روابط ثابتة",
       emailLabel: "البريد",
       githubLabel: "غيت هب",
+      facebookLabel: "حلول تقنية",
     },
     contact: {
       title: "تواصل",
@@ -327,6 +328,7 @@ export const dictionary = {
       linksTitle: "Fixed links",
       emailLabel: "Email",
       githubLabel: "GitHub",
+      facebookLabel: "Facebook",
     },
     contact: {
       title: "Contact",

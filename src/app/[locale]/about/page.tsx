@@ -36,6 +36,19 @@ export default async function AboutPage({
               </a>
             </dd>
           </div>
+          <div>
+            <dt className="text-sm text-paper-dim">{a.facebookLabel}</dt>
+            <dd>
+              <a
+                href={site.facebook}
+                className="text-brass underline-offset-4 hover:underline"
+                rel="noreferrer"
+                target="_blank"
+              >
+                {site.facebookName}
+              </a>
+            </dd>
+          </div>
         </dl>
       </section>
     </article>
