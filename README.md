@@ -42,7 +42,8 @@ Next.js (App Router) و TypeScript و Tailwind و shadcn/ui للعناصر ال�
 
 - في لوحة Hostinger اختر **Node 20** (الحقل `engines` في `package.json` وملف `.nvmrc`)
 - الإعداد في `next.config.js` كائن عادي (ليس دالة وليست TypeScript) حتى لا تحتاج الاستضافة ترجمة SWC لملف الإعداد
-- `npm run build` يشغّل webpack (`next build --webpack`) ويتضمّن `@next/swc-wasm-nodejs` كبديل إذا فشل المترجم الأصلي
+- المشروع على **Next.js 15.5** مع `@next/swc-wasm-nodejs` و`NEXT_TEST_WASM=1` داخل `npm run build`
+- بعد `npm install` يُحذف `@next/swc-linux-*` الأصلي حتى لا يُحمَّل الثنائي الذي يطلب GLIBC_2.29
 - لا يوجد في المستودع ملف باسم `*.next.config.ts` — ذلك ملف مؤقت تولّده الاستضافة أثناء البناء
 
 اترك أمر البناء الافتراضي `npm run build`. لا تضف متغيرات بيئة.
@@ -93,7 +94,8 @@ The build is set up for Hostinger Node.js (Next.js) on older glibc images:
 
 - Set the dashboard Node version to **20** (`engines` in `package.json` and `.nvmrc`)
 - `next.config.js` exports a plain object (not a function, not TypeScript) so Hostinger does not need SWC to load the config
-- `npm run build` uses webpack (`next build --webpack`) and includes `@next/swc-wasm-nodejs` when the native compiler cannot load
+- The app uses **Next.js 15.5** with `@next/swc-wasm-nodejs` and `NEXT_TEST_WASM=1` in `npm run build`
+- `postinstall` removes native `@next/swc-linux-*` binaries that require GLIBC_2.29
 - There is no `*.next.config.ts` file in this repo — that hashed name is a temporary file Hostinger generates during the build
 
 Leave the build command as `npm run build`. No environment variables are required.

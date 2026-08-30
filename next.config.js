@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Hostinger injects standalone output. Declaring it here is harmless
-  // (they overwrite `output`) and keeps local production builds aligned.
+  // Hostinger overwrites this with standalone. Keep it for local parity.
   output: "standalone",
-  // Hostinger checkouts sit under a domain folder that may have another
-  // lockfile. Pin tracing to this app so `.next/standalone` stays correct.
-  outputFileTracingRoot: __dirname,
+  outputFileTracingRoot: process.cwd(),
 };
 
 module.exports = nextConfig;
