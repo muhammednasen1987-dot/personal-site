@@ -1,6 +1,8 @@
 export function Mark({ className = "" }: { className?: string }) {
   return (
     <svg
+      width="36"
+      height="36"
       viewBox="0 0 64 64"
       className={className}
       aria-hidden="true"

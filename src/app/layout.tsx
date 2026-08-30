@@ -3,6 +3,10 @@ import { Amiri, IBM_Plex_Sans, IBM_Plex_Sans_Arabic, Instrument_Serif } from "ne
 import { site } from "@/lib/site";
 import "./globals.css";
 
+// Fully static pages emit s-maxage=31536000. ISR with 60s is what actually
+// shortens HTML Cache-Control; Hostinger's CDN was pinning stale documents.
+export const revalidate = 60;
+
 const body = IBM_Plex_Sans_Arabic({
   subsets: ["arabic", "latin"],
   weight: ["400", "500", "600", "700"],
