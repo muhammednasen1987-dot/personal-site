@@ -6,7 +6,7 @@
 
 ## التشغيل محلياً
 
-المتطلبات: Node.js 20 أو أحدث.
+المتطلبات: **Node.js 20** (LTS). لا تستخدم 22 على استضافة Hostinger إذا ظهر خطأ GLIBC.
 
 ```bash
 npm install
@@ -36,6 +36,17 @@ npm start
 
 Next.js (App Router) و TypeScript و Tailwind و shadcn/ui للعناصر الأساسية فقط. التصميم مخصّص: حبر دافئ، خط أميري للعناوين العربية، IBM Plex Sans Arabic للنص.
 
+## Hostinger
+
+البناء مضبوط لاستضافة Node.js (Next.js) على أنظمة glibc قديمة:
+
+- في لوحة Hostinger اختر **Node 20** (الحقل `engines` في `package.json` وملف `.nvmrc`)
+- الإعداد في `next.config.js` كائن عادي (ليس دالة وليست TypeScript) حتى لا تحتاج الاستضافة ترجمة SWC لملف الإعداد
+- `npm run build` يشغّل webpack (`next build --webpack`) ويتضمّن `@next/swc-wasm-nodejs` كبديل إذا فشل المترجم الأصلي
+- لا يوجد في المستودع ملف باسم `*.next.config.ts` — ذلك ملف مؤقت تولّده الاستضافة أثناء البناء
+
+اترك أمر البناء الافتراضي `npm run build`. لا تضف متغيرات بيئة.
+
 ---
 
 # Muhammed Nasen — personal site
@@ -46,7 +57,7 @@ No invented testimonials, fake pricing, or a public product signup.
 
 ## Run locally
 
-Requires Node.js 20+.
+Requires **Node.js 20** (LTS). Use 20 on Hostinger if the build reports a GLIBC error.
 
 ```bash
 npm install
@@ -75,3 +86,14 @@ GitHub: [muhammednasen1987-dot](https://github.com/muhammednasen1987-dot)
 ## Stack
 
 Next.js (App Router), TypeScript, Tailwind, and shadcn/ui for primitives only. The look is custom: warm ink, Amiri for Arabic headlines, IBM Plex Sans Arabic for body text.
+
+## Hostinger
+
+The build is set up for Hostinger Node.js (Next.js) on older glibc images:
+
+- Set the dashboard Node version to **20** (`engines` in `package.json` and `.nvmrc`)
+- `next.config.js` exports a plain object (not a function, not TypeScript) so Hostinger does not need SWC to load the config
+- `npm run build` uses webpack (`next build --webpack`) and includes `@next/swc-wasm-nodejs` when the native compiler cannot load
+- There is no `*.next.config.ts` file in this repo — that hashed name is a temporary file Hostinger generates during the build
+
+Leave the build command as `npm run build`. No environment variables are required.
