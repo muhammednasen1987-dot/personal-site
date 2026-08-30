@@ -42,11 +42,10 @@ export default async function AboutPage({
               <a
                 href={site.facebook}
                 className="text-brass underline-offset-4 hover:underline"
-                dir="ltr"
                 rel="noreferrer"
                 target="_blank"
               >
-                {site.facebook}
+                {site.facebookName}
               </a>
             </dd>
           </div>
