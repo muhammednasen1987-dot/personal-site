@@ -27,7 +27,7 @@ export const dictionary = {
     meta: {
       title: "محمد نعسان — حلول تقنية، أتمتة، وذكاء اصطناعي",
       description:
-        "مهندس مستقل يبني أنظمة عملية: بوابات واتساب، أتمتة سير العمل، ووكلاء ذكاء اصطناعي قابلة للنشر.",
+        "أعمل بشكل مستقل على بناء أنظمة عملية: بوابات واتساب، أتمتة سير العمل، ووكلاء ذكاء اصطناعي قابلة للنشر.",
     },
     nav: {
       home: "الرئيسية",
@@ -49,7 +49,7 @@ export const dictionary = {
     home: {
       eyebrow: "إسطنبول · سوريا",
       headline: "حلول تقنية، أتمتة، وذكاء اصطناعي",
-      lead: "مهندس مستقل يبني أنظمة تعمل حيث يعمل العمل: بوابة واتساب محلية، أتمتة للعمليات، ووكلاء يُركَّبون على سير قائم — بلا ضجيج تسويقي.",
+      lead: "أعمل بشكل مستقل على بناء أنظمة تعمل حيث يعمل العمل: بوابة واتساب محلية، أتمتة للعمليات، ووكلاء يُركَّبون على سير قائم — بلا ضجيج تسويقي.",
       primary: "تواصل للعرض",
       secondary: "تعرّف على wa-platform",
       featuredKicker: "المنتج",
@@ -154,7 +154,7 @@ export const dictionary = {
     about: {
       title: "عنّي",
       lead: "سيرة قصيرة. لا أكثر مما هو ثابت.",
-      p1: "محمد نعسان، مهندس مستقل يبني أدوات أتمتة وذكاء اصطناعي وأنظمة تقنية عملية.",
+      p1: "محمد نعسان. أعمل بشكل مستقل على بناء أدوات أتمتة وذكاء اصطناعي وأنظمة تقنية عملية.",
       p2: "أعمل من سياق إسطنبول وسوريا. أهتم بأن يعمل النظام محلياً، بحدود واضحة، دون ادعاء منصة عامة لا وجود لها.",
       p3: "المنتج الملموس الذي أبنيه وأعرضه اليوم هو wa-platform: بوابة واتساب كلاود محلية مع لوحة إدارة ووكلاء قابلة للاستبدال.",
       linksTitle: "روابط ثابتة",
@@ -194,7 +194,7 @@ export const dictionary = {
     meta: {
       title: "Muhammed Nasen — technical solutions, automation, and AI",
       description:
-        "Independent engineer building practical systems: WhatsApp gateways, workflow automation, and deployable AI agents.",
+        "I work independently, building practical systems: WhatsApp gateways, workflow automation, and deployable AI agents.",
     },
     nav: {
       home: "Home",
@@ -216,7 +216,7 @@ export const dictionary = {
     home: {
       eyebrow: "Istanbul · Syria",
       headline: "Technical solutions, automation, and AI",
-      lead: "An independent engineer building systems that run where the work happens: a local WhatsApp gateway, process automation, and agents that attach to an existing workflow — without the usual launch noise.",
+      lead: "I work independently, building systems that run where the work happens: a local WhatsApp gateway, process automation, and agents that attach to an existing workflow — without the usual launch noise.",
       primary: "Request a walkthrough",
       secondary: "See wa-platform",
       featuredKicker: "Product",
@@ -321,7 +321,7 @@ export const dictionary = {
     about: {
       title: "About",
       lead: "A short note. Nothing beyond what is fixed.",
-      p1: "Muhammed Nasen is an independent engineer building automation tools, AI agents, and practical technical systems.",
+      p1: "Muhammed Nasen. I work independently, building automation tools, AI agents, and practical technical systems.",
       p2: "I work from an Istanbul / Syria context. I care that a system can run locally, with clear limits, without claiming a public platform that does not exist.",
       p3: "The concrete product I build and can walk through today is wa-platform: a local WhatsApp Cloud gateway with an admin dashboard and pluggable agents.",
       linksTitle: "Fixed links",
