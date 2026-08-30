@@ -36,12 +36,17 @@ const serif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.origin),
   title: {
     default: `${site.nameAr} — حلول تقنية، أتمتة، وذكاء اصطناعي`,
     template: `%s · ${site.nameAr}`,
   },
   description:
     "أعمل بشكل مستقل على بناء أنظمة عملية: بوابات واتساب، أتمتة سير العمل، ووكلاء ذكاء اصطناعي قابلة للنشر.",
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: `${site.nameAr} — حلول تقنية، أتمتة، وذكاء اصطناعي`,
     description:
